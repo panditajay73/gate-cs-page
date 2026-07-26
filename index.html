@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GATE CS Mission Control — Personal Prep Portal</title>
+<meta name="description" content="Offline GATE CS preparation portal — mathematics, core subjects, roadmap, PYQs, mocks, and a live progress dashboard.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-mark">GT</div>
+      <div class="brand-text">
+        <div class="brand-title">GATE CS Mission Control</div>
+        <div class="brand-sub">70+ Marks Track</div>
+      </div>
+    </div>
+    <nav class="sidebar-nav" id="sidebarNav"></nav>
+  </aside>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <div class="main-col">
+    <header class="topbar">
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input type="text" id="globalSearch" class="search-input" placeholder="Search subjects, FAQ, strategy...">
+        <div class="search-results" id="searchResults"></div>
+      </div>
+      <div class="topbar-spacer"></div>
+      <div class="topbar-right">
+        <button class="icon-btn" id="themeToggle" title="Toggle dark/light mode">☾</button>
+      </div>
+    </header>
+
+    <main class="main-scroll" id="mainScroll">
+      <div id="view"></div>
+    </main>
+  </div>
+
+</div>
+
+<script src="js/content.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
